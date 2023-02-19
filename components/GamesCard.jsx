@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-export default function GamesCard({ gameName, imgSrc, id,gameType }) {
+export default function GamesCard({ gameName, imgSrc, id,gameType, gameStatus }) {
   return (
     <Link href={`games/${id}`}>
       <div className="relative w-full h-[10rem] rounded-lg m-8">
@@ -32,6 +32,7 @@ export default function GamesCard({ gameName, imgSrc, id,gameType }) {
             </style>
             <h2 className="font-fontDM text-2xl z-2 flex-wrap">{gameName}</h2>
             <p className="font-fontDM">Game : {gameType}</p>
+            <p className="font-fontDM">Status : {gameStatus}</p>
           </div>
         </>
       </div>

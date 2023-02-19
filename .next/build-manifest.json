@@ -34,6 +34,21 @@
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/games.js"
+    ],
+    "/games/[gameId]": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/games/[gameId].js"
+    ],
+    "/games/createroom": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/games/createroom.js"
+    ],
+    "/games/joinroom": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/games/joinroom.js"
     ]
   },
   "ampFirstPages": []

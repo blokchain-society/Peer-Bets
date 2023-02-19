@@ -1,9 +1,9 @@
-import imageOne from '../public/games/one.webp';
-import imageTwo from '../public/games/two.webp';
-import imageThree from '../public/games/three.webp';
-import imageFour from '../public/games/four.webp';
-import imageFive from '../public/games/five.webp';
-import imageSix from '../public/games/six.webp';
+import imageOne from '../public/games/cricket.jpeg';
+import imageTwo from '../public/games/footba;;.jpeg';
+import imageThree from '../public/games/hockey.jpeg';
+import imageFour from '../public/games/horse.jpeg';
+import imageFive from '../public/games/iit.jpeg';
+import imageSix from '../public/games/custom.jpeg';
 export const gamesList = [
    
     {   id:"1",
@@ -17,14 +17,15 @@ export const gamesList = [
         id:"2",
         imgSrc:imageTwo,
         gameName:"Argentina v/s Brazil",
-        gameType:"Football"
+        gameType:"Football",
+        gameStatus:"Ongoing"
     },
     
     {   
         id:"3",
         imgSrc:imageThree,
         gameName:"Delhi v/s Jaipur Pink",
-        gameType:"Kabaddi",
+        gameType:"Hockey",
         gameStatus:"Ongoing"
     },
     
@@ -32,15 +33,15 @@ export const gamesList = [
         id:"4",
         imgSrc:imageFour,
         gameName:"Nuggets v/s Mavericks",
-        gameType:"Basket-Ball",
+        gameType:"Horse Riding",
         gameStatus:"Ongoing"
         
     },
     {   
         id:"5",
         imgSrc:imageFive,
-        gameName:"IND v/s China",
-        gameType:"Table-Tennis",
+        gameName:"IIT Dharwad vs IIT Bombay",
+        gameType:"Inter-IIT",
         gameStatus:"Ongoing"
         
     },
@@ -48,7 +49,7 @@ export const gamesList = [
         id:"6",
         imgSrc:imageSix,
         gameName:"Padres v/s Mariners",
-        gameType:"Base-Ball",
+        gameType:"Custom",
         gameStatus:"Ongoing"
         
     }

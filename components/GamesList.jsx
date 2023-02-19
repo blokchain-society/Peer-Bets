@@ -13,7 +13,7 @@ export default function GamesList(){
         {
             gamesList.map((el,i)=>{
                 return(
-                    <GamesCard imgSrc={el.imgSrc} gameName={el.gameName} key={el.gameName} id={el.id} gameType={el.gameType} />
+                    <GamesCard imgSrc={el.imgSrc} gameName={el.gameName} key={el.gameName} id={el.id} gameType={el.gameType} gameStatus={el.gameStatus}/>
                 )
             })
         }
