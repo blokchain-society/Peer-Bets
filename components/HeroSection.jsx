@@ -39,21 +39,7 @@ export default function HeroSection() {
           <Circular />
         </section>
 
-        <div className="grid place-content-center ">
-          <button
-            className="font-bold font-fontDM font-xl  text-center text-white bg-gradient-to-r from-btn-blue via-btn-purple to-btn-blue   
-        animate-glow bg-300 p-3 rounded-full"
-          >
-            <Link href="createroom"><h1 className="whitespace-nowrap d-flex justify-between" ><span className="mt-2 mx-2">Create-Room </span><GrAddCircle size="40"  /></h1></Link>
-          </button>
-
-          <button
-            className="font-bold font-fontDM font-xl  text-center text-white bg-gradient-to-r from-btn-blue via-btn-purple to-btn-blue   
-        animate-glow bg-300 mt-4 p-3 rounded-full"
-          >
-            <Link href="joinroom"><h1 className="whitespace-nowrap d-flex justify-between" ><span className="mt-2 mx-2">Join-Room </span><GrAddCircle size="40"  /></h1></Link>
-          </button>
-        </div>
+       
       </div>
 
       <CardsWrapper />

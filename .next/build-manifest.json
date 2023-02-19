@@ -30,15 +30,25 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/createroom": [
+    "/games": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/createroom.js"
+      "static/chunks/pages/games.js"
     ],
-    "/joinroom": [
+    "/games/[gameId]": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/joinroom.js"
+      "static/chunks/pages/games/[gameId].js"
+    ],
+    "/games/createroom": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/games/createroom.js"
+    ],
+    "/games/joinroom": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/games/joinroom.js"
     ]
   },
   "ampFirstPages": []

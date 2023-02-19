@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import Logo from "../public/Logo.webp";
 import GlowingBtn from "../utils/glowingBtn";
@@ -53,6 +54,7 @@ export default function Navbar() {
             <li className="pl-2 cursor-pointer mx-2">About</li>
 
             <li className="pl-2 cursor-pointer mx-2">Vision</li>
+            <li className="pb-2 cursor-pointer mx-2 "><Link href="games">Games</Link></li>
             {/* <li className="pl-2 cursor-pointer mx-2">Create-Room</li> */}
           </ul>
         </div>
@@ -76,6 +78,7 @@ export default function Navbar() {
             <li className="pb-2 cursor-pointer ">Home</li>
             <li className="pb-2 cursor-pointer ">About</li>
             <li className="pb-2 cursor-pointer ">Vision</li>
+            <li className="pb-2 cursor-pointer "><Link href="games">Games</Link></li>
           </ul>
         </div>
       ) : null}
