@@ -3,12 +3,14 @@ A Decentralised Peer to Peer Betting System for all games
 
 # Contract Address : 
 
-
-Polygon Testnet : 0x1a1e953189F13b0575Cd93E4B556A0C67B0F52F5
-
+## FVM address : 0x267523886fb890e0dC633f836953ACcd6131BEAa 
 
 
-Mantle Testnet : 0x604D3d179D911B41Ac333485B52B410a180B4C7D
+ ## Polygon Testnet : 0x1a1e953189F13b0575Cd93E4B556A0C67B0F52F5
+
+
+
+## Mantle Testnet : 0x604D3d179D911B41Ac333485B52B410a180B4C7D
 
 
 
