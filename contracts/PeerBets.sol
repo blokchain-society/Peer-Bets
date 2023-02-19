@@ -83,7 +83,7 @@ contract Bet {
 
      function generateBetOutcome() private {
         
-        game.outcome = uint(blockhash(block.number-1))%10 + 1;
+        game.outcome =uint (keccak256(abi.encodePacked (msg.sender, block.timestamp, randNo))%11);
         game.status = STATUS_COMPLETE;
 
         if (game.creator.guess == game.joiner.guess) {
