@@ -1,10 +1,18 @@
-//SPDX-License-Identifier: UNLICENSED
+/SPDX-License-Identifier: UNLICENSED
 
 pragma solidity ^0.8.0 ;
 
-contract Bet {
+import "@chainlink/contracts/src/v0.8/interfaces/VRFCoordinatorV2Interface.sol";
+import "@chainlink/contracts/src/v0.8/VRFConsumerBaseV2.sol";
+
+// For Goerli Testnet : 
+//  VRF Coordinator : 0x2Ca8E0C643bDe4C2E08ab1fA0da3401AdAD7734D
+// GasLane : 0x79d3d8832d904592c0bf9818b621522c988bb8b0c05cdc3b15aea1b6e8db0c15
+// Subscription ID : 8497
+// CallbackGasLimit : 500000 
+
+contract Bet is VRFConsumerBaseV2 {
     //Betting  Status 
-    uint private randNo=0;
     uint constant STATUS_WIN = 1;
     uint constant STATUS_LOSE = 2;
     uint constant STATUS_TIE = 3;
@@ -34,9 +42,16 @@ contract Bet {
     
 
     Game game; 
+    uint256 public s_lastTimeStamp ; 
+    VRFCoordinatorV2Interface public immutable i_vrfCoordinator ;
+    bytes32 public i_gasLane ; 
+    uint64  public i_subscriptionId ; 
+    uint16 public constant REQUEST_CONFIRMATIONS = 3;
+    uint32 private immutable i_callbackGasLimit;
+    uint32 private constant NUM_WORDS = 1;
      
      //fallback function
-    receive() external payable {
+    fallback() external payable {
 
     }
 
@@ -51,6 +66,17 @@ contract Bet {
       game.joiner = PeerBet(_guess, payable(msg.sender), STATUS_PENDING);
       generateBetOutcome();
     }
+
+    function checkUpkeep(
+        bytes memory /* checkData */
+    )
+        public
+        view
+       
+        returns (
+            bool upkeepNeeded,
+            bytes memory /* performData */
+        )
 
     function payout() public payable {
 
@@ -84,8 +110,7 @@ contract Bet {
 
      function generateBetOutcome() private {
         
-        game.outcome =uint (keccak256(abi.encodePacked (msg.sender, block.timestamp,randNo)))%10;
-        randNo=game.outcome;
+        game.outcome =uint (blockhash(block.number-1))%10 + 1;
         game.status = STATUS_COMPLETE;
 
         if (game.creator.guess == game.joiner.guess) {
