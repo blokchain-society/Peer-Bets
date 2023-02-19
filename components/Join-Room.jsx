@@ -27,9 +27,7 @@ const JoinRoom = () => {
             </h1>
             <div>
               <p className="font-extralight text-lg leading-8 font-fontJost">
-                Galaxy Guild serves as the platform for Players, Guilds, and
-                Scholarship Managers to collaborate and make the most out of
-                their Metaverse experience!{" "}
+              Enter your private PeerBets ID to confirm your invitation and join your exclusive betting pool.{" "}
               </p>
             </div>
             <form className="mt-4 w-1/2 p-5 border drop-shadow-lg rounded-lg">

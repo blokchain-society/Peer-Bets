@@ -42,8 +42,7 @@ export default function Recent(){
     return(
      <div className="flex flex-col items-center bg-vision p-12">
          <section className="text-center">
-             <p>/ WHATS NEW /</p>
-             <h2 className="font-header font-bold text-xl pt-4">RECENT NEWS</h2>
+             <h2 className="font-header font-bold text-xl pt-4">USE CASES</h2>
          </section>
 
          <div className="flex flex-col items-center md:flex-row md:justify-between">

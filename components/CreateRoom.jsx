@@ -23,13 +23,11 @@ const CreateRoom = () => {
         <div className=" pb-16 ">
           <section className=" z-5 text-white p-12 text-center flex flex-col items-center">
             <h1 className="text-3xl leading-7 pb-6 font-header">
-              Create Your Room For Bet
+            Create Your Room For Bet
             </h1>
             <div>
               <p className="font-extralight text-lg leading-8 font-fontJost">
-                Galaxy Guild serves as the platform for Players, Guilds, and
-                Scholarship Managers to collaborate and make the most out of
-                their Metaverse experience!{" "}
+              Create an exclusive betting pool and get a private PeerBets ID that you can share among your friends for them to join your pool.{" "}
               </p>
             </div>
             <form className="mt-4 w-1/2 p-5 border drop-shadow-lg rounded-lg">

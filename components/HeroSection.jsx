@@ -27,13 +27,12 @@ export default function HeroSection() {
       <div className=" pb-16 ">
         <section className=" z-5 text-white p-12 text-center flex flex-col items-center">
           <h1 className="text-3xl leading-7 pb-6 font-header">
-            BRING THE GAME
+          LET'S  BET  P2P
           </h1>
           <div>
             <p className="font-extralight text-lg leading-8 font-fontJost">
-              Galaxy Guild serves as the platform for Players, Guilds, and
-              Scholarship Managers to collaborate and make the most out of their
-              Metaverse experience!{" "}
+            Peer-Bets serves as the platform for crypto gamblers to collaborate and make the most out of the
+              betting experience among their peers!{" "}
             </p>
           </div>
           <Circular />

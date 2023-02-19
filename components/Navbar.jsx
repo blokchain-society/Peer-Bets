@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import Logo from "../public/Logo.webp";
+import Logo from "../public/PeerBets-logos_white.png";
 import GlowingBtn from "../utils/glowingBtn";
 
 const HamIcon = () => {
@@ -47,7 +47,7 @@ export default function Navbar() {
     <>
       <nav className="bg-dk-bluish h-20 flex flex-row items-center px-8 justify-between ">
         <div className="lg:flex lg:flex-row lg:justify-between">
-          <Image src={Logo} width={180} height={28} alt="logo" />
+        <Image src={Logo} width={100} height={60} alt="logo" />
 
           <ul className="hidden font-header lg:flex lg:flex-row lg:px-8 ">
             <li className="pl-2 cursor-pointer mx-2">Home</li>

@@ -146,15 +146,12 @@ export default function Vision() {
       <div className="flex-1 pr-8 lg:flex-1">
         <h1 className="text-4xl pb-4 font-bold">Vision</h1>
         <article className="text-xl lg:pr-20">
-        <p className="pb-8">  Galaxy Guild’s mission is to accelerate the transition of games
-          towards a decentralised future.</p> 
+        <p className="pb-8"> Peer-Bets' mission is to accelerate the Web3 and DeFi adoption by providing a large number of users who don't know much about team creation, advanced betting, etc by providing them with a simple win or lose peer-to-peer betting platform.</p> 
           
-        <p className="sm:flex-1 pb-8">  Galaxy Guild is committed to enhancing
-          the gamer experience and continuously pushing the boundary between the
-          real world and Metaverse.</p> 
+        <p className="sm:flex-1 pb-8">  Group of friends can create their own private betting pool and place simple win-or-lose bet among themselfs with instant payouts among yourself. The PeerBets ID can be shared over messaging channels, social-media for you friends to join you in betting.</p> 
           
-        <p>  By empowering players and investors towards
-          an openly accessible, independent and decentralised marketplace. </p>
+        <p>   Peer-Bets is committed to enhance
+          the gamble experience in a secured way.   </p>
         </article>
       </div>
 

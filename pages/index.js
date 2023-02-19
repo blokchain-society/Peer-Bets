@@ -14,8 +14,8 @@ export default function Home() {
      <Navbar />
      <HeroSection />
      <Vision />
-     <Recent />
-     <Community />
+     {/* <Recent /> */}
+     {/* <Community /> */}
      <Footer />
     </>
   )

@@ -14,7 +14,7 @@ export const gamesList = [
     {   
         id:"2",
         imgSrc:imageTwo,
-        gameName:"Argintina v/s Brazil",
+        gameName:"Argentina v/s Brazil",
         gameType:"Football"
     },
     {   

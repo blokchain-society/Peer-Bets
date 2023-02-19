@@ -2,19 +2,19 @@ import Card from "./Cards";
 
 const cardsInfo = [
   {
-    header: "Empower",
+    header: "Join-a-Room",
     content:
-      "Galaxy Guild is a blockchain-based Gaming NFT lending and borrowing platform powered by Solana Network.",
+      "You need to enter PeerBets ID to join a stake pool and bet among your peers!",
   },
   {
-    header: "Excel",
+    header: "Create-a-Room",
     content:
-      "Galaxy Guild is a blockchain-based Gaming NFT lending and borrowing platform powered by Solana Network.",
+      "Take the initiative to start betting among your peers by sharing PeerBets ID.",
   },
   {
-    header: "Excite",
+    header: "Judges",
     content:
-      "Galaxy Guild is a blockchain-based Gaming NFT lending and borrowing platform powered by Solana Network.",
+      "Judges need to be in even number and minimum count is 4. They need to enter the details of final results HONESTLY!!",
   },
 ];
 
