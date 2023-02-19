@@ -39,7 +39,7 @@ export default function HeroSection() {
           <Circular />
         </section>
 
-       
+
       </div>
 
       <CardsWrapper />
