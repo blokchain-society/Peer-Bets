@@ -1,0 +1,1 @@
+{"c":["pages/games/[gameId]","webpack"],"r":["pages/games/createroom"],"m":["./components/CreateRoom.jsx","./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fgames%2Fcreateroom&absolutePagePath=%2FUsers%2Fnikku.jr.dev%2FDesktop%2FPeer-Bets%2Fpages%2Fgames%2Fcreateroom.js!","./pages/games/createroom.js"]}

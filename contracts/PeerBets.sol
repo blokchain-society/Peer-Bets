@@ -1,3 +1,4 @@
+
 /SPDX-License-Identifier: UNLICENSED
 
 pragma solidity ^0.8.0 ;
@@ -13,6 +14,7 @@ import "@chainlink/contracts/src/v0.8/VRFConsumerBaseV2.sol";
 
 contract Bet is VRFConsumerBaseV2 {
     //Betting  Status 
+
     uint constant STATUS_WIN = 1;
     uint constant STATUS_LOSE = 2;
     uint constant STATUS_TIE = 3;
@@ -42,6 +44,11 @@ contract Bet is VRFConsumerBaseV2 {
     
 
     Game game; 
+
+     
+     //fallback function
+    receive() external payable {
+
     uint256 public s_lastTimeStamp ; 
     VRFCoordinatorV2Interface public immutable i_vrfCoordinator ;
     bytes32 public i_gasLane ; 
@@ -52,6 +59,7 @@ contract Bet is VRFConsumerBaseV2 {
      
      //fallback function
     fallback() external payable {
+
 
     }
 
@@ -77,6 +85,7 @@ contract Bet is VRFConsumerBaseV2 {
             bool upkeepNeeded,
             bytes memory /* performData */
         )
+
 
     function payout() public payable {
 
@@ -110,7 +119,12 @@ contract Bet is VRFConsumerBaseV2 {
 
      function generateBetOutcome() private {
         
+
+        game.outcome =uint (keccak256(abi.encodePacked (msg.sender, block.timestamp,randNo)))%10;
+        randNo=game.outcome;
+
         game.outcome =uint (blockhash(block.number-1))%10 + 1;
+
         game.status = STATUS_COMPLETE;
 
         if (game.creator.guess == game.joiner.guess) {
