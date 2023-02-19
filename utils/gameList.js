@@ -9,37 +9,48 @@ export const gamesList = [
     {   id:"1",
         imgSrc:imageOne,
         gameName:"India v/s Australia",
-        gameType:"Cricket"
+        gameType:"Cricket",
+        gameStatus:"Ongoing"
     },
+    
     {   
         id:"2",
         imgSrc:imageTwo,
         gameName:"Argentina v/s Brazil",
         gameType:"Football"
     },
+    
     {   
         id:"3",
         imgSrc:imageThree,
         gameName:"Delhi v/s Jaipur Pink",
-        gameType:"Kabaddi"
+        gameType:"Kabaddi",
+        gameStatus:"Ongoing"
     },
+    
     {   
         id:"4",
         imgSrc:imageFour,
         gameName:"Nuggets v/s Mavericks",
-        gameType:"Basket-Ball"
+        gameType:"Basket-Ball",
+        gameStatus:"Ongoing"
+        
     },
     {   
         id:"5",
         imgSrc:imageFive,
         gameName:"IND v/s China",
-        gameType:"Table-Tennis"
+        gameType:"Table-Tennis",
+        gameStatus:"Ongoing"
+        
     },
     {   
         id:"6",
         imgSrc:imageSix,
         gameName:"Padres v/s Mariners",
-        gameType:"Base-Ball"
+        gameType:"Base-Ball",
+        gameStatus:"Ongoing"
+        
     }
 
 ]
